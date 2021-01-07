@@ -187,11 +187,12 @@ function DetailsScreen({ navigation }) {
    
   
 
-function NameScreen(route){
+function NameScreen(route, {navigation}){
  function sout(){
     auth()
   .signOut()
   .then(() => console.log('User signed out!'));
+  navigation.navigate('signup');
     
   }
   console.log(route)
