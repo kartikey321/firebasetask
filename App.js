@@ -7,7 +7,7 @@ import auth from '@react-native-firebase/auth';
 
 
 function signupScreen({ navigation }) {
-  function pass(){
+  function sup(){
     auth()
 .createUserWithEmailAndPassword(email, password)
 .then((ref) => {
@@ -84,7 +84,7 @@ function signupScreen({ navigation }) {
       />
     <TouchableOpacity
         style={styles.button}
-        onPress={() => pass()
+        onPress={() => sup()
       }
       >
         <Text style={styles.buttontext}>Signup</Text>
